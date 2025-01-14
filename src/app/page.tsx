@@ -2,6 +2,7 @@
 // import Image from "next/image";
 
 import { ChartOverView } from "@/components/chart";
+import { Sales } from "@/components/sales";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BadgeDollarSign, DollarSign, Percent, Users } from "lucide-react";
 
@@ -79,8 +80,9 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="flex flex-col md:flex-row gap-4">
+      <section className="flex flex-col md:flex-row gap-4 mt-4">
         <ChartOverView />
+        <Sales />
       </section>
     </main>
   );
